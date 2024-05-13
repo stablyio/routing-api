@@ -18,6 +18,10 @@ export function chainIdToNetworkName(networkId: ChainId): string {
       return 'avalanchec'
     case ChainId.BASE:
       return 'base'
+    case ChainId.FRAX:
+      return 'frax-mainnet'
+    case ChainId.FRAX_TESTNET:
+      return 'frax-testnet'
     default:
       return 'ethereum'
   }
@@ -116,6 +120,9 @@ export function generateProviderUrl(key: string, value: string): string {
     }
     case 'ALCHEMY_1': {
       return `https://eth-mainnet.g.alchemy.com/v2/${tokens[0]}`
+    }
+    case 'FRAX_2522': {
+      return `https://rpc.testnet.frax.com`
     }
   }
   throw new Error(`Unknown provider-chainId pair: ${key}`)
