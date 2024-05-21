@@ -70,12 +70,12 @@ export const BATCH_PARAMS: { [chainId: number]: BatchParams } = {
     gasLimitPerCall: 1_200_000,
     quoteMinSuccessRate: 0.1,
   },
-  [ChainId.FRAX]: {
+  [ChainId.FRAXTAL]: {
     multicallChunk: 80,
     gasLimitPerCall: 1_200_000,
     quoteMinSuccessRate: 0.1,
   },
-  [ChainId.FRAX_TESTNET]: {
+  [ChainId.FRAXTAL_TESTNET]: {
     multicallChunk: 80,
     gasLimitPerCall: 1_200_000,
     quoteMinSuccessRate: 0.1,
@@ -192,8 +192,8 @@ export const NEW_QUOTER_DEPLOY_BLOCK: { [chainId in ChainId]: number } = {
   [ChainId.ZORA_SEPOLIA]: -1,
   [ChainId.ROOTSTOCK]: -1,
   [ChainId.BLAST]: 2370179,
-  [ChainId.FRAX]: -1,
-  [ChainId.FRAX_TESTNET]: 7157044,
+  [ChainId.FRAXTAL]: -1,
+  [ChainId.FRAXTAL_TESTNET]: 7157044,
 }
 
 // 0 threshold means it's not deployed yet
@@ -221,8 +221,8 @@ export const LIKELY_OUT_OF_GAS_THRESHOLD: { [chainId in ChainId]: number } = {
   [ChainId.ZORA_SEPOLIA]: 0,
   [ChainId.ROOTSTOCK]: 0,
   [ChainId.BLAST]: 17540 * 2, // 17540 is the single tick.cross cost on blast. We multiply by 2 to be safe
-  [ChainId.FRAX]: 17540 * 2,
-  [ChainId.FRAX_TESTNET]: 0,
+  [ChainId.FRAXTAL]: 17540 * 2,
+  [ChainId.FRAXTAL_TESTNET]: 0,
 }
 
 // TODO: Move this new addresses to SOR

@@ -18,9 +18,9 @@ export function chainIdToNetworkName(networkId: ChainId): string {
       return 'avalanchec'
     case ChainId.BASE:
       return 'base'
-    case ChainId.FRAX:
+    case ChainId.FRAXTAL:
       return 'frax-mainnet'
-    case ChainId.FRAX_TESTNET:
+    case ChainId.FRAXTAL_TESTNET:
       return 'frax-testnet'
     default:
       return 'ethereum'

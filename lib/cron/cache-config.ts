@@ -59,15 +59,15 @@ export const chainProtocols = [
   },
   // {
   //   protocol: Protocol.V3,
-  //   chainId: ChainId.FRAX,
+  //   chainId: ChainId.FRAXTAL,
   //   timeout: 90000,
-  //   provider: new V3SubgraphProvider(ChainId.FRAX, 3, 90000),
+  //   provider: new V3SubgraphProvider(ChainId.FRAXTAL, 3, 90000),
   // },
   {
     protocol: Protocol.V3,
-    chainId: ChainId.FRAX_TESTNET,
+    chainId: ChainId.FRAXTAL_TESTNET,
     timeout: 90000,
-    provider: new V3SubgraphProvider(ChainId.FRAX_TESTNET, 3, 90000),
+    provider: new V3SubgraphProvider(ChainId.FRAXTAL_TESTNET, 3, 90000),
   },
   // Currently there is no working V3 subgraph for Optimism so we use a static provider.
   // V2.
