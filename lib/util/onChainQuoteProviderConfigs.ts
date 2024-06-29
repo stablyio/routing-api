@@ -193,7 +193,7 @@ export const NEW_QUOTER_DEPLOY_BLOCK: { [chainId in ChainId]: number } = {
   [ChainId.ROOTSTOCK]: -1,
   [ChainId.BLAST]: 2370179,
   [ChainId.FRAXTAL]: -1,
-  [ChainId.FRAXTAL_TESTNET]: 7157044,
+  [ChainId.FRAXTAL_TESTNET]: 9778040,
 }
 
 // 0 threshold means it's not deployed yet

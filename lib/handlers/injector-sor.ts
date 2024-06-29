@@ -69,7 +69,7 @@ import {
 import { v4 } from 'uuid/index'
 
 export const SUPPORTED_CHAINS: ChainId[] = [
-  ChainId.MAINNET,
+  // ChainId.MAINNET,
   // ChainId.OPTIMISM,
   // ChainId.ARBITRUM_ONE,
   // ChainId.POLYGON,

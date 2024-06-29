@@ -150,7 +150,7 @@ export class RoutingLambdaStack extends cdk.NestedStack {
         ),
       ],
       tracing: aws_lambda.Tracing.ACTIVE,
-      logRetention: RetentionDays.TWO_WEEKS,
+      logRetention: RetentionDays.ONE_DAY,
     })
 
     const lambdaAlarmErrorRate = new aws_cloudwatch.Alarm(this, 'RoutingAPI-LambdaErrorRate', {

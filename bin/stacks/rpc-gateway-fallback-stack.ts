@@ -51,7 +51,7 @@ export class RpcGatewayFallbackStack extends cdk.NestedStack {
         ),
       ],
       tracing: aws_lambda.Tracing.ACTIVE,
-      logRetention: RetentionDays.ONE_WEEK,
+      logRetention: RetentionDays.ONE_DAY,
 
       environment: {
         PROVIDER_HEALTH_STATE_DB_TABLE_NAME: DynamoDBTableProps.RpcProviderHealthStateDbTable.Name,
